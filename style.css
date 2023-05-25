@@ -1,3 +1,105 @@
-body{
-	background: #c4dafa;
+ body {
+    background: #c4dafa;
+    margin: 0;
+    padding: 0;
+    font-family: Imapact, sans-serif;
+
 }
+
+.Contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 50px;
+}
+
+
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 10%; 
+    height: 10%;
+}
+
+ .Contenido-Entrada {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.Contenido-Salida {
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+    resize: none;
+    border-radius: 10px; 
+
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.encriptar-boton {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.desencriptar-boton {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #f44336;
+    color: white;
+    border: 2 2;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.Copiar {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: dimgray;
+    color: white;
+    border: 2 2;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+ @media screen and (max-width: 768px) {
+            .Contenido {
+                flex-direction: column;
+            }
+
+            .Contenido-Entrada, .Contenido-Salida {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .Contenido-Salida {
+                order: -1; 
+            }
+        }
